@@ -1,0 +1,16 @@
+{{>layouts/header}}
+
+<form class="container" action="/articles/create" method="post"> <!--action은 어디로 보내냐, method는 어떤 방식으로 할것이냐.-->
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title"> <!--name이 dto의 변수 값하고 같아야함.-->
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles">Back</a>
+</form>
+
+{{>layouts/footer}}
