@@ -12,4 +12,6 @@ public class FirstApiController {
         return "hello";
     }
 
+    @GetMapping("/api/hi")
+    public String hi(){ return "hi";}
 }

@@ -74,5 +74,5 @@ public class CommentService {
         return CommentDto.createCommentDto(target);
     }
 
-    // 연습용 pr
+    // 연습용 prdd
 }
